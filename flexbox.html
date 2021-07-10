@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            display: flex;
+            border: 1px solid slategray;
+            height: 400px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            font-size: 3em;
+            border: 3px solid seagreen;
+        }
+        #box-4{
+            flex-grow: 1;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>I am flexible right now</h1>
+    <div class="container">
+        <div class="box">BOX-1</div>
+        <div class="box">BOX-2</div>
+        <div id="box-4" class="box">BOX-3</div>
+    </div>
+</body>
+
+</html>
